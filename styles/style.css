@@ -18,6 +18,7 @@
   padding: 10px;
   margin: 0;
   min-inline-size: 355px;
+  min-height: 6670px;
 }
 /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
