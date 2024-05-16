@@ -10,7 +10,10 @@
   --accent-text-color: #353430;
   --header-text-color: #353430;
   --name-color: #ffc2e6;
-  background: url("/images/cover-image-light.png");
+  background: url("/images/cover-image-light.png");}
+  
+  .page {
+    background-attachment: fixed;}
 
 /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -46,7 +49,7 @@
     visibility: hidden;
   }
 
-  .rec::after {
+  .rec::after { 
     visibility: hidden;
   }
-}
+   
