@@ -37,7 +37,7 @@
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
-  text-shadow: 4px 4px 0 #fd6969;
+  text-shadow: 4px 4px 0 var(--accent-bg-color);
   line-height: 97px;
   margin-top: 48px;
   margin-bottom: 0;
@@ -253,7 +253,7 @@
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
-  text-shadow: 4px 4px 0 #fd6969;
+  text-shadow: 2px 2px 0 var(--accent-bg-color);
   line-height: 97px;
   padding-left: 3px;
   margin-top: 275px;
@@ -261,14 +261,14 @@
 }
 
 .footer {
+  height:100%;
   padding-top: 49px;
-  height: 668px;
   position: relative;
 }
 
 .footer_decorated-zone {
   position: relative;
-  width: 748px;
+  width: 355px;
 }
 
 .footer_decorated-zone::before {
@@ -469,13 +469,13 @@
   .footer {
     padding-top: 78px;
     position: relative;
-    height: 100%;
   }
 
   .footer_decorated-zone {
     position: relative;
     margin-left: 0px;
     margin-right: 0;
+    width:748px;
   }
 
   .footer_decorated-zone::before {
@@ -507,9 +507,7 @@
     margin: 0;
   }
 
-  .header {
-    height: 100%;
-  }
+
 
   .decorated-zone::before {
     margin-left: 979px;
@@ -592,7 +590,7 @@
   .text {
     vertical-align: center;
     line-height: 23.4px;
-    margin-top: 11px;
+    margin-top: 10px;
     margin-bottom: 0;
   }
 
@@ -632,7 +630,7 @@
     grid-area: wrapper_2;
     width: 315px;
   }
-  
+
   .wrapper_3 {
     grid-area: wrapper_3;
     width: 315px;
@@ -716,7 +714,6 @@
     font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-weight: 700;
-    text-shadow: 4px 4px 0 #fd6969;
     line-height: 97px;
     padding-left: 76px;
     margin-top: 317px;
@@ -725,12 +722,13 @@
 
   .footer {
     padding-top: 80px;
-    height: 668px;
+    height: 1024px;
     position: relative;
   }
 
   .footer_decorated_zone {
     position: relative;
+    width:100%;
   }
 
   .footer_decorated-zone::before {
