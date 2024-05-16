@@ -23,7 +23,7 @@
 
 .header {
   position: relative;
-  height:100%;
+  height: 100%;
 }
 
 .decorated-zone {
@@ -64,21 +64,20 @@
 }
 
 .header__theme-menu {
-  padding-top: 38px; 
+  padding-top: 38px;
   display: grid;
   flex-direction: column;
   gap: 16.5px;
   justify-content: flex-end;
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  text-transform: lowercase; 
-} 
+  text-transform: lowercase;
+}
 
 .header__theme-menu-item {
   list-style-type: none;
   text-transform: lowercase;
 }
-
 
 .rec {
   position: absolute;
@@ -122,7 +121,7 @@
   outline: solid 1px transparent;
   padding-left: 8px;
   padding-bottom: 4.5px;
-  margin-top:11px;
+  margin-top: 11px;
 }
 
 .header__theme-menu-button:hover {
@@ -433,6 +432,7 @@
       "tape books ice-cream"
       "tape street street";
   }
+
   .sunset {
     grid-area: sunset;
   }
@@ -469,7 +469,7 @@
   .footer {
     padding-top: 78px;
     position: relative;
-    height:100%;
+    height: 100%;
   }
 
   .footer_decorated-zone {
@@ -506,9 +506,11 @@
     padding: 0;
     margin: 0;
   }
-.header{
-  height: 100%;
-}
+
+  .header {
+    height: 100%;
+  }
+
   .decorated-zone::before {
     margin-left: 979px;
   }
@@ -533,27 +535,25 @@
     margin-left: 45px;
   }
 
-  .header__theme-menu-list{
-   margin-right: 394px;
-    padding-top: 0px; 
-     display: flex;
+  .header__theme-menu-list {
+    margin-right: 394px;
+    padding-top: 0px;
+    display: flex;
     flex-direction: row;
-     gap: 6px; 
-    justify-content: center;  
-    height:60px;
+    gap: 6px;
+    justify-content: center;
+    height: 60px;
   }
 
-   .header__theme-menu {
-    padding-top:0px;
-    position:relative;
-   
-  }  
+  .header__theme-menu {
+    padding-top: 0px;
+    position: relative;
+  }
 
   .header__theme-menu-button {
     margin-right: 4px;
-    margin-top:5px;
+    margin-top: 5px;
   }
- 
 
   .header_name {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -622,14 +622,17 @@
       "no_background_text_header . ."
       "wrapper_1 wrapper_2 wrapper_3";
   }
+
   .wrapper_1 {
     grid-area: wrapper_1;
     width: 315px;
   }
+
   .wrapper_2 {
     grid-area: wrapper_2;
     width: 315px;
   }
+  
   .wrapper_3 {
     grid-area: wrapper_3;
     width: 315px;
