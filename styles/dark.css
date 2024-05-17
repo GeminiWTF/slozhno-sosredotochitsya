@@ -273,7 +273,7 @@
 
   .footer_decorated-zone {
     position: relative;
-    width: 355px;
+    width: 375px;
   }
 
   .footer_decorated-zone::before {
@@ -291,7 +291,6 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    margin-top: 15px;
     border-bottom: 1px solid var(--accent-text-color);
     border-left: 1px solid var(--accent-text-color);
   }
@@ -715,15 +714,15 @@
 
     .footer_name {
       display: flex;
-      flex-direction: column;
+      flex-direction: column; 
       color: var(--name-color);
       font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
       font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
       font-weight: 700;
       line-height: 97px;
       padding-left: 76px;
-      margin-top: 317px;
-      margin-bottom: 234px;
+      margin-top: 317px; 
+      margin-bottom: 234px; 
     }
 
     .footer {
