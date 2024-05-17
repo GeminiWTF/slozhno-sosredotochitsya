@@ -12,6 +12,7 @@
   --name-color: #ffc2e6;
   background: url("/images/cover-image-light.png");
   background-attachment: fixed;
+}
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -48,6 +49,5 @@
   }
 
   .rec::after {
-    visibility: hidden;
-  }
-}
+    visibility: hidden;}
+

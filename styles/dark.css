@@ -10,6 +10,7 @@
   --accent-text-color: #ff0070;
   --header-text-color: #000028;
   --name-color: #db00ff;
+}
 
   .page {
     background: url("/images/cover-image-dark.png");
@@ -746,4 +747,3 @@
       border-right: 1px solid var(--accent-text-color);
     }
   }
-}
