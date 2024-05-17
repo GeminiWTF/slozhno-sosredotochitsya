@@ -14,40 +14,40 @@
   background-attachment: fixed;
 }
 
-  /* сохраните этот селектор в приведённом виде.
+/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя*/
 
-  .background_text_header {
-    background-color: var(--accent-bg-color);
-    color: var(--text-color);
-  }
+.background_text_header {
+  background-color: var(--accent-bg-color);
+  color: var(--text-color);
+}
 
-  .header__theme-menu-button:default {
-    font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
-    width: 70px;
-    font-size: 18px;
-    line-height: 18px;
-    color: #353430;
-    text-transform: lowercase;
-    border: solid 1px #353430;
-    outline: solid 1px #353430;
-    padding-left: 8px;
-    padding-bottom: 5.5px;
-  }
+.header__theme-menu-button:default {
+  font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
+  width: 70px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #353430;
+  text-transform: lowercase;
+  border: solid 1px #353430;
+  outline: solid 1px #353430;
+  padding-left: 8px;
+  padding-bottom: 5.5px;
+}
 
-  .header__theme-menu-button:hover {
-    border: solid 1px #32312d;
-  }
+.header__theme-menu-button:hover {
+  border: solid 1px #32312d;
+}
 
-  .header__theme-menu-button:focus {
-    border-bottom: 1px solid #353430;
-  }
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid #353430;
+}
 
-  .rec::before {
-    visibility: hidden;
-  }
+.rec::before {
+  visibility: hidden;
+}
 
-  .rec::after {
-    visibility: hidden;}
-
+.rec::after {
+  visibility: hidden;
+}
