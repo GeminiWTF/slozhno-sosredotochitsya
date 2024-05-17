@@ -10,9 +10,7 @@
   --accent-text-color: #ff0070;
   --header-text-color: #000028;
   --name-color: #db00ff;
-}
 
-.page.theme_dark {
   .page {
     background: url("/images/cover-image-dark.png");
     background-size: cover;
@@ -727,7 +725,6 @@
 
     .footer {
       padding-top: 80px;
- 
       position: relative;
     }
 
@@ -754,4 +751,6 @@
       margin-top: 54px;
       border-bottom: 1px solid var(--accent-text-color);
       border-left: 1px solid var(--accent-text-color);
-    }}}
+    }
+  }
+}

@@ -262,13 +262,14 @@
 
 .footer {
   height: 100vh;
-  padding-top: 50px;
   position: relative;
 }
 
 .footer_decorated-zone {
   position: relative;
-  width: 355px;
+  width: 355px;  
+  padding-top: 50px;
+
 }
 
 .footer_decorated-zone::before {
@@ -721,7 +722,6 @@
 
   .footer {
     padding-top: 80px;
-   
     position: relative;
   }
 
