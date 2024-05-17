@@ -5,13 +5,15 @@
  */
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-:root.theme-dark {  --text-color: #f1b2ce;
+:root.theme-dark {
+  --text-color: #f1b2ce;
   --accent-bg-color: #ff0070;
   --accent-text-color: #ff0070;
   --header-text-color: #000028;
-  --name-color: #db00ff;}
+  --name-color: #db00ff;
+}
 
-.page.theme_dark { 
+.page.theme_dark {
   --text-color: #f1b2ce;
   --accent-bg-color: #ff0070;
   --accent-text-color: #ff0070;
@@ -138,11 +140,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: solid 1px #fd6969;
+  border: solid 1px var(--accent-text-color);
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid #ff0070;
+  border-bottom: solid 1px var(--accent-text-color);
 }
 
 .background_text_header {

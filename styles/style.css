@@ -125,11 +125,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: solid 1px #fd6969;
+  border: solid 1px var(--accent-text-color);
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid #ff0070;
+  border-bottom: 1px solid var(--accent-text-color);
 }
 
 .background_text_header {
