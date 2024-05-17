@@ -18,9 +18,14 @@ root.theme_light {
   --header-text-color: #353430;
   --name-color: #ffc2e6;
   background: url("/images/cover-image-light.png");
-  background-attachment: fixed;
 }
 
+.page {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
 /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя*/
@@ -30,7 +35,7 @@ root.theme_light {
   color: var(--text-color);
 } */
 
-.header__theme-menu-button:default {
+/* .header__theme-menu-button:default {
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   width: 70px;
   font-size: 18px;
@@ -41,7 +46,7 @@ root.theme_light {
   outline: solid 1px #353430;
   padding-left: 8px;
   padding-bottom: 5.5px;
-}
+} */
 
 .rec::before {
   visibility: hidden;
@@ -50,7 +55,7 @@ root.theme_light {
 .rec::after {
   visibility: hidden;
 }
-
+/* 
 @media (prefers-color-scheme: light) {
   root.theme_light {
     --accent-bg-color: #ff8dcb;
@@ -75,7 +80,7 @@ root.theme_light {
   /* сохраните этот селектор в приведённом виде.
         Так стили написанные ниже будут иметь больший вес,
         чем стили в медиазапросе предпочтений пользователя*/
-
+/* 
   .header__theme-menu-button:default {
     font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
     width: 70px;
@@ -96,4 +101,4 @@ root.theme_light {
   .rec::after {
     visibility: hidden;
   }
-}
+} */
