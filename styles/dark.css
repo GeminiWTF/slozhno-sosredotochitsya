@@ -4,7 +4,14 @@
   переключая тему
  */
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-.page.theme_dark {
+
+:root.theme-dark {  --text-color: #f1b2ce;
+  --accent-bg-color: #ff0070;
+  --accent-text-color: #ff0070;
+  --header-text-color: #000028;
+  --name-color: #db00ff;}
+
+.page.theme_dark { 
   --text-color: #f1b2ce;
   --accent-bg-color: #ff0070;
   --accent-text-color: #ff0070;

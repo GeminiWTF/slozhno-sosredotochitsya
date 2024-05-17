@@ -3,6 +3,15 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+root.theme_light{
+  --accent-bg-color: #ff8dcb;
+  --text-color: #353430;
+  --accent-text-color: #353430;
+  --header-text-color: #353430;
+  --name-color: #ffc2e6;
+  background: url("/images/cover-image-light.png");
+  background-attachment: fixed;
+}
 
 .page.theme_light {
   --accent-bg-color: #ff8dcb;
@@ -18,10 +27,10 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя*/
 
-.background_text_header {
+/* .background_text_header {
   background-color: var(--accent-bg-color);
   color: var(--text-color);
-}
+} */
 
 .header__theme-menu-button:default {
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
@@ -51,3 +60,63 @@
 .rec::after {
   visibility: hidden;
 }
+
+@media (prefers-color-scheme: light) {
+    root.theme_light{
+      --accent-bg-color: #ff8dcb;
+      --text-color: #353430;
+      --accent-text-color: #353430;
+      --header-text-color: #353430;
+      --name-color: #ffc2e6;
+      background: url("/images/cover-image-light.png");
+      background-attachment: fixed;
+    }
+    
+    .page.theme_light {
+      --accent-bg-color: #ff8dcb;
+      --text-color: #353430;
+      --accent-text-color: #353430;
+      --header-text-color: #353430;
+      --name-color: #ffc2e6;
+      background: url("/images/cover-image-light.png");
+      background-attachment: fixed;
+    }
+    
+    /* сохраните этот селектор в приведённом виде.
+        Так стили написанные ниже будут иметь больший вес,
+        чем стили в медиазапросе предпочтений пользователя*/
+    
+    /* .background_text_header {
+      background-color: var(--accent-bg-color);
+      color: var(heder--text-color);
+    } */
+    
+    .header__theme-menu-button:default {
+      font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
+      width: 70px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #353430;
+      text-transform: lowercase;
+      border: solid 1px #353430;
+      outline: solid 1px #353430;
+      padding-left: 8px;
+      padding-bottom: 5.5px;
+    }
+    
+    .header__theme-menu-button:hover {
+      border: solid 1px #32312d;
+    }
+    
+    .header__theme-menu-button:focus {
+      border-bottom: 1px solid #353430;
+    }
+    
+    .rec::before {
+      visibility: hidden;
+    }
+    
+    .rec::after {
+      visibility: hidden;
+    }
+  }
