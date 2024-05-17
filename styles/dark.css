@@ -3,20 +3,19 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
  */
-:root {
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.page.theme_dark{
   --text-color: #f1b2ce;
   --accent-bg-color: #ff0070;
   --accent-text-color: #ff0070;
   --header-text-color: #000028;
   --name-color: #db00ff;
-} /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
   background: url("/images/cover-image-dark.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   font-weight: 400;
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   position: relative;
@@ -756,4 +755,5 @@
     border-bottom: 1px solid var(--accent-text-color);
     border-left: 1px solid var(--accent-text-color);
   }
+}
 }
