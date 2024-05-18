@@ -1,11 +1,3 @@
-:root {
-  --text-color: #f1b2ce;
-  --accent-bg-color: #ff0070;
-  --accent-text-color: #ff0070;
-  --header-text-color: #000028;
-  --name-color: #db00ff;
-} /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   background: url("/images/cover-image-dark.png");
   background-size: cover;
@@ -124,12 +116,19 @@
   margin-top: 11px;
 }
 
+.header__theme-menu-button_active {
+  border: solid 1px var(--accent-text-color);
+}
+
 .header__theme-menu-button:hover {
   border: solid 1px var(--accent-text-color);
+  color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
   border-bottom: 1px solid var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .background_text_header {
@@ -150,7 +149,7 @@
 .main {
   position: relative;
   margin-top: 32px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .no_background_text_header {
@@ -171,15 +170,17 @@
 }
 
 .accent_word {
-  text-shadow: 2px 2px 0 #fd6969;
+  color: var(--text-color);
+  text-shadow: 2px 2px 0 var(--accent-bg-color);
+  text-decoration: none;
 }
 
 .accent_word:hover {
-  text-decoration: underline;
+  border-bottom: solid 1px var(--text-color);
 }
 
 .accent_word:focus {
-  border: solid 1px #ff0070;
+  border: solid 1px var(--text-color);
 }
 
 .text {
@@ -193,27 +194,28 @@
   margin-bottom: 0;
 }
 
-.section_one {
+.section_introduction {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.section_two {
+.section_reasons {
   margin-bottom: 0;
   margin-top: 49px;
 }
 
-.section_three {
+.section_advice {
   margin-bottom: 0;
   margin-top: 49px;
 }
 
-.section_four {
+.section_pictures {
   margin-bottom: 0;
   margin-top: 49px;
 }
 
 .background_text_no_bold {
+  margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
   font-weight: 400;
@@ -222,15 +224,16 @@
 }
 
 .background_text_accent {
+  margin-top: 20px;
   font-size: 18px;
-  padding-top: 5px;
+  padding-top: 0;
   font-weight: 700;
   font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
   background-color: var(--accent-bg-color);
   margin-bottom: 0;
 }
 
-.container {
+.article {
   margin-top: 20px;
 }
 
@@ -258,8 +261,8 @@
   line-height: 97px;
   padding-left: 3px;
   margin-top: 0;
-  margin-bottom: 0; 
-  padding-top:276px;
+  margin-bottom: 0;
+  padding-top: 276px;
   padding-bottom: 248px;
 }
 
@@ -271,7 +274,6 @@
 .footer_decorated-zone {
   position: relative;
   width: 355px;
-  /* padding-top: 50px; */
 }
 
 .footer_decorated-zone::before {
@@ -362,7 +364,7 @@
     vertical-align: center;
   }
 
-  .section_one {
+  .section_introduction {
     display: grid;
     grid-template-columns: 236px 472px;
     grid-template-rows: 314px 314px;
@@ -377,23 +379,23 @@
     width: 472px;
   }
 
-  .wrapper_1 {
-    grid-area: wrapper_1;
+  .wrapper_multitask {
+    grid-area: wrapper_multitask;
     width: 728px;
     height: 174px;
   }
-  .wrapper_2 {
-    grid-area: wrapper_2;
+  .wrapper_food {
+    grid-area: wrapper_food;
     width: 728px;
     height: 174px;
   }
-  .wrapper_3 {
-    grid-area: wrapper_3;
+  .wrapper_gadgets {
+    grid-area: wrapper_gadgets;
     width: 728px;
     height: 174px;
   }
 
-  .section_two {
+  .section_reasons {
     margin-bottom: 0;
     margin-top: 80px;
     display: grid;
@@ -402,12 +404,12 @@
     gap: 20px;
     grid-template-areas:
       "no_background_text_header"
-      "wrapper_1"
-      "wrapper_2"
-      "wrapper_3";
+      "wrapper_multitask"
+      "wrapper_food"
+      "wrapper_gadgets";
   }
 
-  .section_three {
+  .section_advice {
     padding-top: 103px;
     display: grid;
     grid-template-columns: 236px 472px;
@@ -418,7 +420,7 @@
     grid-template-areas: "no_background_text_header wrapper";
   }
 
-  .section_four {
+  .section_pictures {
     width: 728px;
     margin-bottom: 0;
     margin-top: 749px;
@@ -465,18 +467,17 @@
 
   .footer_name {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-      display: flex;
-      flex-direction: column;
-      color: var(--name-color);
-      font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
-      margin-top: 0;
-      margin-bottom: 0; 
-      margin-left:0;
-      padding-left: 203px;
-      padding-top:445px;
-      padding-bottom: 248px;
-    }
-  
+    display: flex;
+    flex-direction: column;
+    color: var(--name-color);
+    font-family: "IBM Plex mono", Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 203px;
+    padding-top: 445px;
+    padding-bottom: 248px;
+  }
 
   .footer {
     height: 100vh;
@@ -488,7 +489,7 @@
     margin-left: 0px;
     margin-right: 0;
     width: 748px;
-    padding-top:30px;
+    padding-top: 30px;
   }
 
   .footer_decorated-zone::before {
@@ -582,6 +583,7 @@
     margin-top: 129px;
     margin-left: 513px;
   }
+  
   .main {
     position: relative;
     margin-top: 40px;
@@ -606,7 +608,7 @@
     margin-bottom: 0;
   }
 
-  .section_one {
+  .section_introduction {
     display: grid;
     grid-template-columns: 315px 649px;
     grid-template-rows: 244px 244px;
@@ -621,7 +623,7 @@
     width: 648px;
   }
 
-  .section_two {
+  .section_reasons {
     margin-bottom: 0;
     margin-top: 50px;
     display: grid;
@@ -630,25 +632,25 @@
     gap: 20px;
     grid-template-areas:
       "no_background_text_header . ."
-      "wrapper_1 wrapper_2 wrapper_3";
+      "wrapper_multitask wrapper_food wrapper_gadgets";
   }
 
-  .wrapper_1 {
-    grid-area: wrapper_1;
+  .wrapper_multitask {
+    grid-area: wrapper_multitask;
     width: 315px;
   }
 
-  .wrapper_2 {
-    grid-area: wrapper_2;
+  .wrapper_food {
+    grid-area: wrapper_food;
     width: 315px;
   }
 
-  .wrapper_3 {
-    grid-area: wrapper_3;
+  .wrapper_gadgets {
+    grid-area: wrapper_gadgets;
     width: 315px;
   }
 
-  .section_three {
+  .section_advice {
     padding-top: 128px;
     display: grid;
     grid-template-columns: 315px 649px;
@@ -659,7 +661,7 @@
     grid-template-areas: "no_background_text_header wrapper";
   }
 
-  .section_four {
+  .section_pictures {
     width: 984px;
     margin-bottom: 0;
     margin-top: 466px;
@@ -672,11 +674,12 @@
   }
 
   .background_text_accent {
+    margin-top: 15px;
     padding-top: 5px;
     margin-bottom: 0;
   }
 
-  .container {
+  .article {
     margin-top: 20px;
   }
 
@@ -727,11 +730,10 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-weight: 700;
     line-height: 97px;
-    width:1024px;
-    margin-bottom: 0; 
-    margin-left:0;
-    margin-top:0;
-    padding-top:315px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 315px;
     padding-left: 278px;
     padding-bottom: 236px;
   }
@@ -739,7 +741,7 @@
   .footer {
     height: 100vh;
     position: relative;
-    width:1004px;
+    width: 1004px;
   }
 
   .footer_decorated_zone {
